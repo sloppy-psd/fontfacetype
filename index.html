@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Face Type</title>
+    <meta name="description" content="Font Face Type. For letter lovers & bold typography seekers.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fontfacetype.com/">
+    <meta property="og:title" content="Font Face Type">
+    <meta property="og:description" content="Font Face Type. For letter lovers & bold typography seekers.">
+    <meta property="og:image" content="https://fontfacetype.com/content/img/FontFaceType_Thubnail.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fontfacetype.com/">
+    <meta property="twitter:title" content="Font Face Type">
+    <meta property="twitter:description" content="Font Face Type. For letter lovers & bold typography seekers.">
+    <meta property="twitter:image" content="https://fontfacetype.com/content/img/FontFaceType_Thubnail.png">
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image-container {
+            max-width: 90vw;
+            max-height: 90vh;
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(-7%);
+        }
+
+        .image-container img {
+            width: 65%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .bottom-image-container {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 11%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bottom-image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* Плавное масштабирование при изменении размера экрана */
+        @media (max-width: 768px) {
+            .image-container {
+                max-width: 100vw;
+                width: 100vw;
+                max-height: 100vh;
+                padding: 0 10px;
+            }
+
+            .image-container img {
+                width: 100%;
+            }
+
+            .bottom-image-container {
+                width: 35%;
+            }
+        }
+
+        @media (min-width: 1920px) {
+            .image-container {
+                max-width: 80vw;
+                max-height: 80vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="content/img/FontFaceType_main.png" alt="Font Face Type">
+    </div>
+    <div class="bottom-image-container">
+        <img src="content/img/AllRights_main.png" alt="All Rights">
+    </div>
+</body>
+</html>
+
